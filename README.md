@@ -1,4 +1,4 @@
-# MCP Server (Currently works only on CKAN)
+# MCP Server (Currently works only on CKAN, version 1)
 
 A simple MCP integration for querying CKAN-based open data portals (e.g. open.canada.ca, data.gov.uk, data.qld.gov.au), further be adjusted to also integrate DKAN, OpenDataSoft, Socrata.
 
