@@ -160,7 +160,7 @@ async def ckan_datastore_search(portal_url: str, resource_id: str, filters: dict
     #return await loop.run_in_executor(None, _enrich_dataset, portal_url, dataset_id, force)
 
 
-# some CKAN portals 
+# some CKAN portals - limited implementation
 _KNOWN_PORTALS = [
     {"url": "https://open.canada.ca/data",      "country": "Canada",         "tags": ["canada", "government"]},
     {"url": "https://data.gov.uk",               "country": "UK",             "tags": ["uk", "britain", "government"]},
@@ -176,7 +176,7 @@ _KNOWN_PORTALS = [
 
 
 @mcp.tool()
-async def ckan_find_portal(query: str) -> dict:
+async def ckan_find_portal(query: str) -> dict: # need to change this function as currently tried to see if it working, finds portals based on deterministic list
     # to find relevant CKAN portals for a given topic or country query.
     import asyncio
 
