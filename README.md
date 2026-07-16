@@ -5,7 +5,7 @@ A simple MCP integration for querying CKAN-based open data portals (e.g. open.ca
 ## Tools (currently for CKAN)
 
 ### ckan_find_portal
-Find a CKAN portal matching a topic or country.
+Find a CKAN portal matching a topic or country. -> need to be changed 
 - **query** (string) — search term, e.g. `"Canada open data"`
 
 ### ckan_portal_status
