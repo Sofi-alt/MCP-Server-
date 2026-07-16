@@ -44,6 +44,6 @@ Query rows from a dataset's datastore resource (structured tabular data).
 ## Notes
 
 - will also add the tool for metadata enrichment later one with custom module possibly as currently does not really makes sense with current module done
-- mcp server (with current ckan implementation) fully works when added by developer settings in claude diarectly to the claude_desktop_config.json
-- without Claude desktop version possible to use MCP Inspector v0.22.0 and connect tot he server locally to test it
+- mcp server (with current ckan implementation) fully works when added by developer settings in claude directly to the claude_desktop_config.json
+- without Claude desktop version possible to use MCP Inspector v0.22.0 and connect to the server locally to test it
 - possibly will be enlarged to also DKAN, OpenDataSoft, Socrata with inclusion of them via either separate functions based on the API..
