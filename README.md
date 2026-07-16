@@ -4,27 +4,27 @@ A simple MCP integration for querying CKAN-based open data portals (e.g. open.ca
 
 ## Tools (currently for CKAN)
 
-### `ckan_find_portal`
+### ckan_find_portal
 Find a CKAN portal matching a topic or country.
 - **query** (string) — search term, e.g. `"Canada open data"`
 
-### `ckan_portal_status`
+### ckan_portal_status
 Check whether a CKAN portal is reachable.
 - **portal_url** (string) — base URL of the portal
 
-### `ckan_package_search`
+### ckan_package_search
 Search for datasets on a portal.
 - **portal_url** (string) — base URL of the portal
 - **query** (string) — search term, e.g. `"weather"`
 - **rows** (integer, optional, default 10) — number of results
 - **start** (integer, optional, default 0) — pagination offset
 
-### `ckan_package_show`
+### ckan_package_show
 Get full details for a specific dataset.
 - **dataset_id** (string) — dataset UUID or name
 - **portal_url** (string) — base URL of the portal
 
-### `ckan_datastore_search`
+### ckan_datastore_search
 Query rows from a dataset's datastore resource (structured tabular data).
 - **portal_url** (string) — base URL of the portal
 - **resource_id** (string) — UUID of the datastore resource
@@ -36,11 +36,13 @@ Query rows from a dataset's datastore resource (structured tabular data).
 
 ## Typical workflow
 
-1. `ckan_find_portal` — locate the right portal/s for the queried topic/country
-2. `ckan_package_search` — search that portal for relevant datasets
-3. `ckan_package_show` — inspect a dataset to find its resource IDs
-4. `ckan_datastore_search` — pull actual rows of data from a resource
+1. ckan_find_portal — locate the right portal/s for the queried topic/country
+2. ckan_package_search — search that portal for relevant datasets
+3. ckan_package_show — inspect a dataset to find its resource IDs
+4. ckan_datastore_search — pull actual rows of data from a resource
 
 ## Notes
 
+- will also add the tool for metadata enrichment later one with custom module possibly as currently does not really makes sense with current module done
+- mcp server (with current ckan implementation) fully works when added by developer settings in claude diarectly to the claude_desktop_config.json
 - possibly will be enlarged to also DKAN, OpenDataSoft, Socrata with inclusion of them via either separate functions based on the API..
